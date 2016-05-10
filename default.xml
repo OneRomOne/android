@@ -12,6 +12,9 @@
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
+           
+  <remote  name="TN"
+           fetch="https://github.com/OneRomOne/" />
 
   <default revision="refs/heads/cm-13.0"
            remote="github"
@@ -19,7 +22,7 @@
            sync-j="4" />
 
 <!-- BEGIN CYANOGENMOD -->
-  <project path="build" name="CyanogenMod/android_build" groups="pdk" >
+  <project path="build" name="android_build" remote="TN" revision="cm-13.0" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="android" name="CyanogenMod/android" />
