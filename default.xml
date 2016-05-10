@@ -516,18 +516,18 @@
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
 <!-- END AOSP -->
 
-<!-- Vendor OPO -->
+<!-- Vendor OPO 
   <project name="CyanogenMod/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="github" />
   <project name="CyanogenMod/android_device_oppo_common" path="device/oppo/common" remote="github" />
   <project name="acuicultor/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" revision="reborn3" />
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" />
   <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-13.0" />
   <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="github" revision="cm-13.0" />
-<!-- END Vendor OPO -->
+ END Vendor OPO -->
 
-<!-- Vendor ZukZ1 -->
+<!-- Vendor ZukZ1
   <project name="MrColdbird/proprietary_vendor_zuk" path="vendor/zuk" remote="github" revision="cm-13.0" />
   <project name="MrColdbird/android_device_zuk_ham" path="device/zuk/ham" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_kernel_cyanogen_msm8974" path="kernel/cyanogen/msm8974" remote="github" revision="cm-13.0" />
-<!-- END Vendor ZukZ1 -->
+ END Vendor ZukZ1 -->
 </manifest>
