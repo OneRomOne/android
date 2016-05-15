@@ -133,7 +133,6 @@
   <project path="external/zip" name="CyanogenMod/android_external_zip" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" />
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk" />
@@ -224,7 +223,6 @@
   <project path="packages/apps/Profiles" name="CyanogenMod/android_packages_apps_Profiles" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" groups="pdk-fs" />
   <project path="packages/apps/Screencast" name="CyanogenMod/android_packages_apps_Screencast" />
-  <project path="packages/apps/Settings" name="CyanogenMod/android_packages_apps_Settings" groups="pdk-fs" />
   <project path="packages/apps/SetupWizard" name="CyanogenMod/android_packages_apps_SetupWizard" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" groups="pdk-fs" />
   <project path="packages/apps/Snap" name="CyanogenMod/android_packages_apps_Snap" />
@@ -520,18 +518,9 @@
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
 <!-- END AOSP -->
 
-<!-- Vendor OPO 
-  <project name="CyanogenMod/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="github" />
-  <project name="CyanogenMod/android_device_oppo_common" path="device/oppo/common" remote="github" />
-  <project name="acuicultor/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" revision="reborn3" />
-  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" />
-  <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-13.0" />
-  <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="github" revision="cm-13.0" />
- END Vendor OPO -->
+<!-- Repos Nuclear --> 
+    <project path="packages/apps/Settings" name="OneRomOne/android_packages_apps_Settings" revision="cm-13.0" />
+    <project path="frameworks/base" name="OneRomOne/android_frameworks_base" revision="cm-13.0" />
+<!-- END Repos Nuclear -->
 
-<!-- Vendor ZukZ1
-  <project name="MrColdbird/proprietary_vendor_zuk" path="vendor/zuk" remote="github" revision="cm-13.0" />
-  <project name="MrColdbird/android_device_zuk_ham" path="device/zuk/ham" remote="github" revision="cm-13.0" />
-  <project name="CyanogenMod/android_kernel_cyanogen_msm8974" path="kernel/cyanogen/msm8974" remote="github" revision="cm-13.0" />
- END Vendor ZukZ1 -->
 </manifest>
