@@ -519,5 +519,7 @@
       <copyfile src="core/root.mk" dest="Makefile" />
     </project>
 <!-- END Repos Nuclear -->
+  
+  <project path="packages/apps/SetupWizard" name="CyanogenMod/android_packages_apps_SetupWizard" />
 
 </manifest>
