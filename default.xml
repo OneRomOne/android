@@ -514,7 +514,7 @@
 
 <!-- Repos Nuclear --> 
     <project path="packages/apps/Settings" name="OneRomOne/android_packages_apps_Settings" revision="cm-13.0" />
-    <project path="frameworks/base" name="OneRomOne/android_frameworks_base" revision="cm-13.0" />
+    <project path="frameworks/base" name="OneRomOne/android_frameworks_base" revision="zuk" />
     <project path="vendor/cm" name="OneRomOne/android_vendor_cm" revision="cm-13.0" />
     <project path="build" name="android_build" remote="TN" revision="cm-13.0" groups="pdk" >
       <copyfile src="core/root.mk" dest="Makefile" />
