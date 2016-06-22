@@ -12,7 +12,7 @@ res1=$(date +%s.%N)
 
 # Kernel Details
 BASE_RADIOACTIVE_VER="RADIOACTIVE_"
-VER="V2.47"
+VER="V2.45"
 RADIOACTIVE_VER="$BASE_RADIOACTIVE_VER$VER"
 
 # Vars
@@ -56,7 +56,6 @@ sleep 5
 # Clear terminal
 clear
 
-
 # Funcion de limpieza del directorio de salida
 echo -e "\n\n${bldgrn}  Quieres limpiar el directorio OUT?\n"
 echo ""
@@ -75,7 +74,7 @@ then
 	echo ""
 	$normal
         make clean
- echo How much CCache do you want to utilize?
+        echo How much CCache do you want to utilize?
                 echo Recommended CCache ranges from 50 to 100 Gigabytes
                 echo HINT: CCache will help to increase build times by taking up your hard-drive space
                 echo If you dont want CCache or are not sure, type 0
@@ -97,16 +96,16 @@ fi
 sleep 5
 # Clear terminal
 clear
-# Dependencias opo
+# Dependencias op3
 echo -e ""
 echo -e ""
-echo -e "${bldcya}  Comprobando dependencias de OPO..."
+echo -e "${bldcya}  Comprobando dependencias de op3..."
 echo -e ""
 echo -e ""
 $normal
 $green
 sleep 5
-breakfast bacon
+breakfast oneplus3
 sleep 5
 clear
 # Empezar Compilación
@@ -114,7 +113,7 @@ echo -e ""
 echo -e ""
 echo -e "${bldcya}  Iniciando la compilación de NucleaROM...."
 echo -e ""
-brunch bacon
+brunch oneplus3
 echo -e ""
 # Get elapsed time
 $blue

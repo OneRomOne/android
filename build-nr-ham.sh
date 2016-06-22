@@ -11,8 +11,8 @@ echo -e '\0033\0143'
 res1=$(date +%s.%N)
 
 # Kernel Details
-BASE_RADIOACTIVE_VER="RADIOACTIVE_KERNEL_"
-VER="V1.25"
+BASE_RADIOACTIVE_VER="RADIOACTIVE_"
+VER="V2.45"
 RADIOACTIVE_VER="$BASE_RADIOACTIVE_VER$VER"
 
 # Vars
@@ -55,6 +55,7 @@ echo -e "Entorno configurado"
 sleep 5
 # Clear terminal
 clear
+
 # Funcion de limpieza del directorio de salida
 echo -e "\n\n${bldgrn}  Quieres limpiar el directorio OUT?\n"
 echo ""
@@ -73,22 +74,32 @@ then
 	echo ""
 	$normal
         make clean
+        echo How much CCache do you want to utilize?
+                echo Recommended CCache ranges from 50 to 100 Gigabytes
+                echo HINT: CCache will help to increase build times by taking up your hard-drive space
+                echo If you dont want CCache or are not sure, type 0
+                read ccsize
+                echo Enter path to directory you want to use for ccache.
+                echo Something like /home/$USER/.ccache
+                read ccpath
+                export USE_CCACHE=1
+                export CCACHE_DIR=$ccpath/
+                prebuilts/misc/linux-x86/ccache/ccache -M $ccsize
 else
 	echo -e ""
 	echo -e ""
 	echo -e "Continua con la compilación NucleaROM, sin borrar archivos antiguos."
 	echo -e ""
 	echo -e ""
-
 export USE_CCACHE=1
 fi
 sleep 5
 # Clear terminal
 clear
-# Dependencias opo
+# Dependencias ham
 echo -e ""
 echo -e ""
-echo -e "${bldcya}  Comprobando dependencias de OPO..."
+echo -e "${bldcya}  Comprobando dependencias de ham..."
 echo -e ""
 echo -e ""
 $normal
